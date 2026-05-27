@@ -1,0 +1,230 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
+
+
+header{
+    background:#8a2be2;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+}
+
+.logo h1{
+    color:white;
+}
+
+.nav-list{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.nav-list a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+.banner img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+
+.historia{
+    text-align:center;
+    padding:40px;
+}
+
+
+.btn-historia{
+    background:#8a2be2;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-historia:hover{
+    background:#6d1bb3;
+    transform:scale(1.05);
+}
+
+
+.texto-historia{
+    display:none;
+    margin-top:25px;
+    background:white;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.texto-historia p{
+    font-size:18px;
+    color:#444;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+
+.whatsapp{
+    text-align:center;
+    padding:30px;
+}
+
+.whatsapp img{
+    width:90px;
+}
+
+.whatsapp h2{
+    color:#25d366;
+    margin-top:10px;
+}
+
+
+.pagos{
+    text-align:center;
+    padding:20px;
+}
+
+.pagos img{
+    width:300px;
+    margin-top:15px;
+}
+
+
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card p{
+    color:#8a2be2;
+    font-size:20px;
+    margin:10px 0;
+}
+
+.card button{
+    background:#8a2be2;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.contacto{
+    padding:40px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+fieldset{
+    border:2px solid #8a2be2;
+    padding:20px;
+    border-radius:10px;
+}
+
+legend{
+    color:#8a2be2;
+    font-weight:bold;
+    font-size:22px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.botones{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.botones button{
+    flex:1;
+    background:#8a2be2;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+footer{
+    background:#8a2be2;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}

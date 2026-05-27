@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+        <img src="C:\Users\crist\Desktop\AULAS CONTINUA\front - end js\logo compras - copia.jpg" alt="Logo">
+        <h1>MI TIENDA ONLINE</h1>
+    </div>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#productos">PRODUCTOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+    <img src="C:\Users\crist\Desktop\AULAS CONTINUA\front - end js\shoping foto.jpg" alt="Shopping">
+</section>
+
+<!-- HISTORIA -->
+<section class="historia">
+
+    <button onclick="mostrarHistoria()" class="btn-historia">
+        Nuestra Historia
+    </button>
+
+    <div id="textoHistoria" class="texto-historia">
+
+        <p>
+            Somos una tienda online dedicada a la venta de tecnología
+            y productos electrónicos de alta calidad.
+        </p>
+
+        <p>
+            Nuestro objetivo es brindar una experiencia de compra rápida,
+            segura y moderna, ofreciendo celulares, televisores,
+            tablets y proyectores al mejor precio.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- WHATSAPP -->
+<section class="whatsapp">
+    <img src="C:\Users\crist\Desktop\AULAS CONTINUA\front - end js\descarga.jpg" alt="Whatsapp">
+    <h2>11333335555</h2>
+</section>
+
+<!-- PAGOS -->
+<section class="pagos">
+    <h2>Pagos con tarjetas</h2>
+    <img src="C:\Users\crist\Desktop\AULAS CONTINUA\front - end js\pay.png" alt="Tarjetas">
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos" class="productos">
+
+    <div class="card">
+        <img src="C:\Users\crist\Desktop\AULAS CONTINUA\front - end js\calular.jpg" alt="Celular">
+        <h3>Celular Xiaomi Redmi</h3>
+        <p>$450.000</p>
+        <button>Comprar</button>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\crist\Desktop\AULAS CONTINUA\front - end js\television.jpg" alt="Television">
+        <h3>Smart TV 50"</h3>
+        <p>$890.000</p>
+        <button>Comprar</button>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\crist\Desktop\AULAS CONTINUA\front - end js\proyector.jpg" alt="Proyector">
+        <h3>Proyector HD</h3>
+        <p>$520.000</p>
+        <button>Comprar</button>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\crist\Desktop\AULAS CONTINUA\front - end js\tablet.jpg" alt="Tablet">
+        <h3>Tablet Samsung</h3>
+        <p>$350.000</p>
+        <button>Comprar</button>
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+
+<form>
+
+    <fieldset>
+
+        <legend>CONTACTO</legend>
+
+        <label>Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre">
+
+        <label>Mail</label>
+        <input type="email" placeholder="Ingrese su mail">
+
+        <label>Opciones</label>
+
+        <select>
+            <option>Opción 1</option>
+            <option>Opción 2</option>
+        </select>
+
+        <label>Mensaje</label>
+        <textarea rows="5"></textarea>
+
+        <div class="botones">
+            <button type="submit">Enviar Mensaje</button>
+            <button type="reset">Limpiar</button>
+        </div>
+
+    </fieldset>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>© Mi Tienda Online</h3>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+
+function mostrarHistoria() {
+
+    var historia = document.getElementById("textoHistoria");
+
+    if(historia.style.display === "block"){
+        historia.style.display = "none";
+    } else {
+        historia.style.display = "block";
+    }
+
+}
+
+</script>
+
+</body>
+</html>
